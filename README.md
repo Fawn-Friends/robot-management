@@ -100,3 +100,10 @@ systemctl restart fawn
 exit 
 ```
 ✅ Now the Fawn should be online via Wi-Fi. Run this process again to add Fawn to new wifi networks. Email jon@fawnfriends.com and peter@fawnfriends.com if you run into any challenges.
+
+## Troubleshooting 
+
+Fawns can become unresponsive when moving between wifi networks. If moving between known wifi networks ```systemctl restart fawn``` typically resolves the issue. If on a new network, use the instructions above and Fawn will become response once on the new network and restarted. 
+
+If all else fails, try ```systemctl reboot``` after ```adb shell``` to restart Fawn.   
+
